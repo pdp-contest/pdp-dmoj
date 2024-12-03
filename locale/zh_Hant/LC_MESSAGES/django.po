@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-22 03:00+0000\n"
-"PO-Revision-Date: 2024-11-03 00:59\n"
+"PO-Revision-Date: 2024-11-19 00:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
@@ -433,25 +433,25 @@ msgstr "%(contest)s 中的 %(problem)s"
 
 #: judge/admin/submission.py:161
 msgid "Rejudge the selected submissions"
-msgstr "重新評分提交"
+msgstr "重新評測選取的提交紀錄"
 
 #: judge/admin/submission.py:164 judge/admin/submission.py:186
 msgid "You do not have the permission to rejudge submissions."
-msgstr "你沒有重新評分提交的權限。"
+msgstr "你沒有重新評測提交紀錄的權限。"
 
 #: judge/admin/submission.py:170
 msgid "You do not have the permission to rejudge THAT many submissions."
-msgstr "你沒有重新評分這麼多提交的權限。"
+msgstr "你沒有重新評分這麼多提交紀錄的權限。"
 
 #: judge/admin/submission.py:183
 msgid "Rescore the selected submissions"
-msgstr "重新計分提交"
+msgstr "重新計分選取的提交紀錄"
 
 #: judge/admin/submission.py:208 judge/views/problem_manage.py:129
 #, python-format
 msgid "%d submission was successfully rescored."
 msgid_plural "%d submissions were successfully rescored."
-msgstr[0] "%d 筆提交已重新計分。"
+msgstr[0] "已成功重新計分%d筆提交紀錄。"
 
 #: judge/admin/submission.py:212 judge/models/problem.py:117
 msgid "problem code"
@@ -984,7 +984,7 @@ msgstr "這些使用者將可以查看排行榜。"
 
 #: judge/models/contest.py:102
 msgid "can see contest submissions"
-msgstr "查看競賽提交"
+msgstr "查看競賽提交紀錄"
 
 #: judge/models/contest.py:104
 msgid "These users will be able to see in-contest submissions."
@@ -1349,7 +1349,7 @@ msgstr "競賽題目"
 
 #: judge/models/contest.py:615 judge/models/submission.py:231
 msgid "submission"
-msgstr "提交"
+msgstr "提交紀錄"
 
 #: judge/models/contest.py:619 judge/models/contest.py:634
 msgid "participation"
@@ -2144,7 +2144,7 @@ msgstr ""
 #: templates/submission/submission-list-tabs.html:15
 #: templates/ticket/message.html:18
 msgid "Admin"
-msgstr "管理員"
+msgstr "管理"
 
 #: judge/models/profile.py:168
 msgid "comment mute"
@@ -3780,7 +3780,7 @@ msgstr "終止"
 #: templates/admin/judge/judge/change_form.html:30
 #: templates/user/edit-profile.html:377 templates/user/edit-profile.html:380
 msgid "Disable"
-msgstr "禁用"
+msgstr "停用"
 
 #: templates/admin/judge/judge/change_form.html:33
 #: templates/admin/judge/judge/change_form.html:36
@@ -3914,7 +3914,7 @@ msgstr "評論動態"
 
 #: templates/blog/list.html:174
 msgid "New problems"
-msgstr "我的題目"
+msgstr "最新題目"
 
 #: templates/blog/list.html:191
 msgid "My open tickets"
@@ -4888,7 +4888,7 @@ msgstr "您將重新評分{count}筆提交紀錄，您確定要進行此操作�
 
 #: templates/problem/manage_submission.html:98
 msgid "You are about to rejudge a few submissions. Are you sure you want to do this?"
-msgstr "您將重新評分一些提交紀錄，您確定要進行此操作嗎？"
+msgstr "您將重新評測一些提交紀錄，您確定要進行此操作嗎？"
 
 #: templates/problem/manage_submission.html:117
 msgid "Rejudge Submissions"
@@ -4926,7 +4926,7 @@ msgstr "全部重新評分"
 #, python-format
 msgid "This will rescore %(count)s submission."
 msgid_plural "This will rescore %(count)s submissions."
-msgstr[0] "這將重新評分%(count)s個提交。"
+msgstr[0] "這將重新評分%(count)s筆提交紀錄。"
 
 #: templates/problem/manage_submission.html:168
 #, python-format
@@ -4936,7 +4936,7 @@ msgstr[0] "您確定您要重新評分%(count)s個提交？"
 
 #: templates/problem/manage_submission.html:173
 msgid "Rescore all submissions"
-msgstr "重新評分所有提交"
+msgstr "重新評分所有提交紀錄"
 
 #: templates/problem/problem.html:96
 msgid "View as PDF"
@@ -5000,7 +5000,7 @@ msgstr ""
 
 #: templates/problem/problem.html:175
 msgid "Manage submissions"
-msgstr "管理提交"
+msgstr "管理提交紀錄"
 
 #: templates/problem/problem.html:188 templates/problem/vote-ajax.html:20
 msgid "Points:"
@@ -5519,7 +5519,7 @@ msgstr "重要事項："
 #: templates/registration/totp_enable.html:109
 #, python-format
 msgid "If you lose your authentication device and are unable to use your scratch codes, %(site_name)s admins will NOT be able to recover your account. Please keep your scratch codes safe!"
-msgstr "如果您遺失的您的備用碼且無法使用兩步驟驗證，%(site_name)s 管理員將無法復原您的帳戶。請務必妥善保管備用碼!"
+msgstr "如果您遺失的您的備用碼且無法使用兩步驟驗證，%(site_name)s 管理員將無法復原您的帳戶。請務必妥善保管備用碼！"
 
 #: templates/registration/two_factor_auth.html:33
 #: templates/user/edit-profile.html:159
