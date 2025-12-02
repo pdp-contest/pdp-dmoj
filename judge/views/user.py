@@ -151,6 +151,13 @@ class CustomLoginView(LoginView):
 class CustomPasswordChangeView(PasswordChangeView):
     template_name = 'registration/password_change_form.html'
 
+    def post(self, request, *args, **kwargs):
+        key = f'pwchange!{request.META["REMOTE_ADDR"]}'
+        cache.add(key, 0, timeout=settings.DMOJ_PASSWORD_CHANGE_LIMIT_WINDOW * MINUTES_TO_SECONDS)
+        if cache.incr(key) > settings.DMOJ_PASSWORD_CHANGE_LIMIT_COUNT:
+            return HttpResponse(_('You have changed your password too many times. Please try again later.'), content_type='text/plain', status=429)
+        return super().post(request, *args, **kwargs)
+
     def form_valid(self, form):
         self.request.session['password_pwned'] = False
         return super().form_valid(form)
